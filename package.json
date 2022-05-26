@@ -1,0 +1,40 @@
+{
+    "name": "eslint-plugin-mpb",
+    "version": "0.0.0",
+    "description": "Custom eslint rules for MPB",
+    "private": true,
+    "keywords": [
+        "eslint",
+        "eslintplugin",
+        "eslint-plugin"
+    ],
+    "author": "Jack Corpe",
+    "main": ".build/index.js",
+    "scripts": {
+        "clean": "rm -Rf ./.build/",
+        "build:ci": "npm run build",
+        "build": "npm run clean && tsc --project tsconfig.build.json",
+        "lint": "eslint -c .eslintrc --ext .ts './src/**/*.ts' --no-error-on-unmatched-pattern",
+        "test": "jest"
+    },
+    "devDependencies": {
+        "@typescript-eslint/parser": "^5.26.0",
+        "@typescript-eslint/utils": "^5.26.0",
+        "eslint": "^8.0.1",
+        "eslint-plugin-eslint-plugin": "^4.0.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "jest": "^28.1.0",
+        "prettier": "^2.6.2",
+        "reflect-metadata": "^0.1.13",
+        "ts-jest": "^28.0.3",
+        "typescript": "^4.7.2"
+    },
+    "engines": {
+        "node": "12.x || 14.x || >= 16"
+    },
+    "peerDependencies": {
+        "eslint": ">=6"
+    },
+    "license": "ISC"
+}

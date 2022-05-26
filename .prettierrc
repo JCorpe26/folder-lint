@@ -1,0 +1,19 @@
+{
+    "bracketSameLine": false,
+    "arrowParens": "always",
+    "singleQuote": true,
+    "insertPragma": true,
+    "tabWidth": 4,
+    "trailingComma": "none",
+    "importOrder": [
+        "^rules(.*)$",
+        "^[./]"
+    ],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true,
+    "experimentalBabelParserPluginsList": [
+        "jsx",
+        "typescript",
+        "classProperties"
+    ]
+}
