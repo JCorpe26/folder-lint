@@ -1,21 +1,22 @@
 {
-    "name": "eslint-plugin-mpb",
-    "version": "0.0.0",
+    "name": "@mpb-com/eslint-plugin-mpb",
+    "version": "0.0.4",
     "description": "Custom eslint rules for MPB",
-    "private": true,
     "keywords": [
         "eslint",
         "eslintplugin",
         "eslint-plugin"
     ],
     "author": "Jack Corpe",
-    "main": ".build/index.js",
+    "main": "index.js",
     "scripts": {
         "clean": "rm -Rf ./.build/",
         "build:ci": "npm run build",
         "build": "npm run clean && tsc --project tsconfig.build.json",
+        "postbuild": "cp package.json .build",
         "lint": "eslint -c .eslintrc --ext .ts './src/**/*.ts' --no-error-on-unmatched-pattern",
-        "test": "jest"
+        "test": "jest",
+        "publish-package": "npm version patch && npm run build && npm publish ./.build"
     },
     "devDependencies": {
         "@typescript-eslint/parser": "^5.26.0",
