@@ -1,9 +1,12 @@
 /** @format */
 
 module.exports = {
-    roots: ['<rootDir>/src'],
+    rootDir: 'src',
     preset: 'ts-jest',
     testRegex: '(.*.test).ts$',
     moduleFileExtensions: ['ts', 'js', 'json'],
-    setupFiles: ['./src/test.setup.ts']
+    setupFiles: ['./test.setup.ts'],
+    moduleNameMapper: {
+        '^@/(.*)$': '<rootDir>/$1'
+    }
 };

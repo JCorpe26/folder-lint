@@ -21,7 +21,11 @@ npm install eslint-plugin-mpb --save-dev
 (Local development when creating a rule):
 
 ```sh
-npm install --D file:../eslint-mpb
+# eslint-mpb
+npm run build
+
+# target repo
+npm install --D file:../eslint-mpb/.build
 ```
 
 ## Usage

@@ -1,7 +1,7 @@
 /** @format */
 import { ImportDeclaration } from '@typescript-eslint/types/dist/generated/ast-spec';
 
-import { createRule } from '../../helpers';
+import { createRule } from 'helpers';
 
 export default createRule({
     name: 'no-feature-import',

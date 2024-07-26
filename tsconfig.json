@@ -30,7 +30,10 @@
         "resolveJsonModule": true,
         "downlevelIteration": true,
         "incremental": true,
-        "tsBuildInfoFile": ".build/tsbuildinfo"
+        "tsBuildInfoFile": ".build/tsbuildinfo",
+        "paths": {
+            "@/*": ["*"]
+        }
     },
     "include": ["**/*"],
     "exclude": ["node_modules", "**/node_modules/**", ".build"]
