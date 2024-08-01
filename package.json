@@ -1,7 +1,6 @@
 {
-    "name": "@mpb-com/eslint-plugin-mpb",
-    "version": "0.0.4",
-    "description": "Custom eslint rules for MPB",
+    "name": "eslint-plugin-folder-lint",
+    "version": "0.0.1",
     "keywords": [
         "eslint",
         "eslintplugin",
@@ -19,6 +18,7 @@
         "publish-package": "npm version patch && npm run build && npm publish ./.build"
     },
     "devDependencies": {
+        "@types/jest": "^27.5.2",
         "@typescript-eslint/parser": "^5.26.0",
         "@typescript-eslint/utils": "^5.26.0",
         "eslint": "^8.0.1",

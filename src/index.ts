@@ -1,8 +1,4 @@
-/**
- * @format
- * @fileoverview Custom eslint rules for MPB
- * @author Jack Corpe
- */
+/** @format */
 
 import rules from './rules';
 
